@@ -36,20 +36,16 @@ if (arrayA[0].length == arrayB.length) {
 				resultE = resultE + (arrayA[i][k] * arrayB[k][j]);
 				// resultE += arrayA[i][k] * arrayB[k][j];
                 // 변수에 계산한 값을 저장
-				k++;
 			}
-			
+
 			resultR.push(resultE); // 결과 행렬의 행에 행렬성분을 push
-			j++;
 		}
 		
 		resultArray.push(resultR); // 결과 행렬에 행을 push
-		i++;
 	}
 
 	for (l=0; l<resultArray.length; l++) { // 결과 행렬을 표시하기 위한 반복문
 		document.write(resultArray[l] + '<br>');
-		l++;
 	}
 
 } else { // 첫 번째 행렬의 열 수와, 두 번째 행렬의 행 수가 일치하지 않으면
